@@ -1,4 +1,4 @@
-{% set version = '1.65.0-1' %}
+{% set version = '1.66.0-1' %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,15 +12,15 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/BH_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/BH/BH_{{ version }}.tar.gz
-  sha256: 82baa78afe8f1edc3c7e84e1c9924321047e14c1e990df9b848407baf3f7cb58
+  sha256: 17d9eb5512d74aa7dd02ec98953408422e728b01ce63493a6a473070b9596a92
 
 build:
   number: 0
   skip: true  # [win32]
-
   rpaths:
     - lib/R/lib/
     - lib/
+
 requirements:
   build:
     - r-base
@@ -50,7 +50,6 @@ about:
     ''numeric'' ''pending'' ''phoenix'' ''preprocessor'' ''propery_tree'' ''random''
     ''range'' ''scope_exit'' ''smart_ptr'' ''sort'' ''spirit'' ''tuple'' ''type_traits''
     ''typeof'' ''unordered'' ''utility'' ''uuid''.'
-
   license_family: OTHER
 
 extra:
@@ -59,3 +58,4 @@ extra:
     - bgruening
     - daler
     - jdblischak
+    - cbrueffer
