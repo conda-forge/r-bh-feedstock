@@ -1,4 +1,4 @@
-{% set version = '1.66.0-1' %}
+{% set version = "1.69.0-1" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/BH_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/BH/BH_{{ version }}.tar.gz
-  sha256: 17d9eb5512d74aa7dd02ec98953408422e728b01ce63493a6a473070b9596a92
+  sha256: a0fd4364b7e368f09c56dec030823f52c16da0787580af7e4615eddeb99baca2
 
 build:
   noarch: generic
-  number: 2001
+  number: 1000
   rpaths:
     - lib/R/lib/
     - lib/
