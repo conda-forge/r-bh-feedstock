@@ -1,4 +1,4 @@
-{% set version = "1.72.0-2" %}
+{% set version = "1.72.0-3" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/BH_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/BH/BH_{{ version }}.tar.gz
-  sha256: 2a0ee62cd69d6204a8dadc24028ba131c351c4287e292a13d38d49d5beed2c78
+  sha256: 888ec1a3316bb69e1ba749b08ba7e0903ebc4742e3a185de8d148c13cddac8ab
 
 build:
   merge_build_host: True  # [win]
