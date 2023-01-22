@@ -1,4 +1,4 @@
-{% set version = "1.78.0-0" %}
+{% set version = "1.81.0-1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/BH_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/BH/BH_{{ version }}.tar.gz
-  sha256: 3b9e9d07682013e0c06a396dda176b405eab99a7273eca6c40d1b4c4110e8cb3
+  sha256: f51c8badd6f181e06353314e1d15a6ec1495cc498ee74b6fa4ea8aba6e97ff64
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
