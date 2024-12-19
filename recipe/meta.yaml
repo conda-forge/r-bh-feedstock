@@ -1,4 +1,4 @@
-{% set version = "1.84.0-0" %}
+{% set version = "1.87.0-1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/BH_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/BH/BH_{{ version }}.tar.gz
-  sha256: 6fb660755f572cd975073d7052075654acf8db12d208954ca223b8e4f77ef1ac
+  sha256: 59829ae635f42a23289a1c51617f5f972704e1b243b604dad20ef5a812e60393
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
